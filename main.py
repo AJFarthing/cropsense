@@ -53,7 +53,7 @@ if response.status_code == 200:
         load_clf = pickle.load(f)
 
     # Predict using the loaded model
-    prediction = load_clf.predict(input_df)
+    prediction = load_clf.predict(input_df)[0]
 
     st.subheader('Prediction')
     st.write(prediction)
