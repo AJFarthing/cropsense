@@ -10,7 +10,7 @@ response = requests.get(raw_url, stream=True)
 
 
 with header:
-    st.title('AgriSense: A Smart Crop Advisor')
+    st.title('CropSense: A Smart Crop Advisor')
     st.text('This app was created to work as a gardening assistant.')
     st.text('With the crop recommendation system, all the guess work is taken out of gardening.')
     st.text('Simply enter readings from your own garden into the User Input Sidebar')
