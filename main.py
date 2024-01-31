@@ -56,7 +56,7 @@ if response.status_code == 200:
     prediction = load_clf.predict(input_df)[0]
 
     st.subheader('Prediction')
-    st.write(prediction)
+    st.write(f"Based on the inputs provided the best crop for your parameters would be {prediction}")
 else:
     # Handle the case when the request fails
     print("Failed to fetch the pickle file from GitHub.")
