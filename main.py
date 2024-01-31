@@ -60,3 +60,7 @@ if response.status_code == 200:
 else:
     # Handle the case when the request fails
     print("Failed to fetch the pickle file from GitHub.")
+
+
+    st.subheader('Prediction')
+    st.write(prediction)
