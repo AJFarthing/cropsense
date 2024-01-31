@@ -55,8 +55,8 @@ if response.status_code == 200:
     # Predict using the loaded model
     prediction = load_clf.predict(input_df)
 
-    st.subheader('Prediction')
-    st.write(prediction)
+    # st.subheader('Prediction')
+    # st.write(prediction)
 else:
     # Handle the case when the request fails
     print("Failed to fetch the pickle file from GitHub.")
